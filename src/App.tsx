@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import Login from "./pages/Login";
+import Routes from "./routes";
+import { parseCookies } from "nookies";
+import { useSelector } from "react-redux";
+import { RootState } from "./types";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
+  const { token, user } = useSelector((state: RootState) => state.clickState);
+
+  useEffect(() => {
+    console.log(token);
+  }, [token]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        {token === undefined || token === '' ? <Login /> : <Routes />}
+      </BrowserRouter>
     </div>
   );
 }
