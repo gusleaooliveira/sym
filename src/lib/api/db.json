@@ -1,6 +1,15 @@
 {
   "revenues": [
-    {}
+    {
+      "id": "",
+      "type": "",
+      "tag": "",
+      "data": "",
+      "value": "",
+      "title": "",
+      "description": "",
+      "frequency": ""
+    }
   ],
   "expenses": [
     {
@@ -22,14 +31,10 @@
       "description": "teste",
       "type": "Despesa",
       "frequency": "Eventualmente",
-      "tag": [
-        "Saúde"
-      ],
+      "tag": ["Saúde"],
       "value": 999,
       "id": "v6qV2BX"
     }
   ],
-  "dashboard": [
-    {}
-  ]
+  "dashboard": [{}]
 }
