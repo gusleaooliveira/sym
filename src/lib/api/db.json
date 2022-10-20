@@ -1,0 +1,35 @@
+{
+  "revenues": [
+    {}
+  ],
+  "expenses": [
+    {
+      "id": "",
+      "type": "",
+      "tag": "",
+      "data": "",
+      "value": "",
+      "title": "",
+      "description": "",
+      "frequency": ""
+    },
+    {
+      "id": "eOYuvei"
+    },
+    {
+      "data": "2022-10-13T03:00:00.000Z",
+      "title": "Teste",
+      "description": "teste",
+      "type": "Despesa",
+      "frequency": "Eventualmente",
+      "tag": [
+        "Saúde"
+      ],
+      "value": 999,
+      "id": "v6qV2BX"
+    }
+  ],
+  "dashboard": [
+    {}
+  ]
+}
